@@ -29,7 +29,7 @@ class DeviceListActivity : AppCompatActivity() {
     /**
      * Newly discovered devices
      */
-    private var mNewDevicesArrayAdapter: ArrayAdapter<String>? = null
+    private lateinit var mNewDevicesArrayAdapter: ArrayAdapter<String>
 
     private fun onConnecting(connecting: Boolean){
         runOnUiThread{
@@ -57,7 +57,7 @@ class DeviceListActivity : AppCompatActivity() {
      */
     private val mDeviceClickListener = AdapterView.OnItemClickListener { av, v, arg2, arg3 ->
         // Cancel discovery because it's costly and we're about to connect
-        mBtAdapter!!.cancelDiscovery()
+        mBtAdapter?.cancelDiscovery()
 
         // Get the device MAC address, which is the last 17 chars in the View
         val info = (v as TextView).text.toString()
@@ -96,15 +96,15 @@ class DeviceListActivity : AppCompatActivity() {
                 val device = intent.getParcelableExtra<BluetoothDevice>(BluetoothDevice.EXTRA_DEVICE)
                 // If it's already paired, skip it, because it's been listed already
                 if (device.bondState != BluetoothDevice.BOND_BONDED) {
-                    mNewDevicesArrayAdapter!!.add(device.name + "\n" + device.address)
+                    mNewDevicesArrayAdapter.add(device.name + "\n" + device.address)
                 }
                 // When discovery is finished, change the Activity title
             } else if (BluetoothAdapter.ACTION_DISCOVERY_FINISHED == action) {
                 setProgressBarIndeterminateVisibility(false)
                 setTitle(R.string.select_device)
-                if (mNewDevicesArrayAdapter!!.count == 0) {
+                if (mNewDevicesArrayAdapter.count == 0) {
                     val noDevices = resources.getText(R.string.none_found).toString()
-                    mNewDevicesArrayAdapter!!.add(noDevices)
+                    mNewDevicesArrayAdapter.add(noDevices)
                 }
                 toast("搜尋完畢")
             }
@@ -156,17 +156,17 @@ class DeviceListActivity : AppCompatActivity() {
 
         // Get a set of currently paired devices
         //seeu 直接取得已配對裝置
-        val pairedDevices = mBtAdapter!!.bondedDevices
-
-        // If there are paired devices, add each one to the ArrayAdapter
-        if (pairedDevices.size > 0) {
-            findViewById<View>(R.id.title_paired_devices).setVisibility(View.VISIBLE)
-            for (device in pairedDevices) {
-                pairedDevicesArrayAdapter.add(device.name + "\n" + device.address)
+        mBtAdapter?.bondedDevices?.let {pairedDevices->
+            // If there are paired devices, add each one to the ArrayAdapter
+            if (pairedDevices.size > 0) {
+                findViewById<View>(R.id.title_paired_devices).setVisibility(View.VISIBLE)
+                for (device in pairedDevices) {
+                    pairedDevicesArrayAdapter.add(device.name + "\n" + device.address)
+                }
+            } else {
+                val noDevices = resources.getText(R.string.none_paired).toString()
+                pairedDevicesArrayAdapter.add(noDevices)
             }
-        } else {
-            val noDevices = resources.getText(R.string.none_paired).toString()
-            pairedDevicesArrayAdapter.add(noDevices)
         }
     }
 
@@ -174,9 +174,7 @@ class DeviceListActivity : AppCompatActivity() {
         super.onDestroy()
 
         // Make sure we're not doing discovery anymore
-        if (mBtAdapter != null) {
-            mBtAdapter!!.cancelDiscovery()
-        }
+        mBtAdapter?.cancelDiscovery()
 
         // Unregister broadcast listeners
         this.unregisterReceiver(mReceiver)
@@ -196,12 +194,10 @@ class DeviceListActivity : AppCompatActivity() {
         findViewById<View>(R.id.title_new_devices).setVisibility(View.VISIBLE)
 
         // If we're already discovering, stop it
-        if (mBtAdapter!!.isDiscovering) {
-            mBtAdapter!!.cancelDiscovery()
-        }
+        mBtAdapter?.cancelDiscovery()
 
         // Request discover from BluetoothAdapter
-        mBtAdapter!!.startDiscovery()
+        mBtAdapter?.startDiscovery()
     }
 
     companion object {
