@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cp_bg"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageButton
+        android:id="@+id/btnBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/cp_bt"
+        android:onClick="clickBt"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnSpdDn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="163dp"
+        android:layout_marginRight="163dp"
+        android:layout_marginTop="171dp"
+        android:background="@drawable/cp_spddn"
+        android:onClick="clickSpdDn"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/speedView"
+        app:layout_constraintTop_toTopOf="@+id/speedView" />
+
+    <ImageButton
+        android:id="@+id/btnSpdUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="159dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="171dp"
+        android:background="@drawable/cp_spdup"
+        android:onClick="clickSpdUp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/speedView"
+        app:layout_constraintTop_toTopOf="@+id/speedView" />
+
+    <TextView
+        android:id="@+id/tvMileage"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="#AAAAAA"
+        android:text="0km"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSpdDn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivLineV"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/ivLineS"
+        app:layout_constraintStart_toStartOf="@+id/btnBt"
+        app:layout_constraintTop_toBottomOf="@+id/btnBt"
+        app:srcCompat="@drawable/cp_linev" />
+
+    <com.jimliuxyz.maprunner.view.SpeedView
+        android:id="@+id/speedView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:needle_image="@drawable/cp_needle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnBt"
+        app:srcCompat="@drawable/cp_spdpan" />
+
+    <ImageView
+        android:id="@+id/ivLineH"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/speedView"
+        app:layout_constraintStart_toEndOf="@+id/btnBt"
+        app:layout_constraintTop_toTopOf="@+id/btnBt"
+        app:srcCompat="@drawable/cp_lineh" />
+
+    <ImageView
+        android:id="@+id/ivLineS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLineH"
+        app:layout_constraintEnd_toStartOf="@+id/ivLineH"
+        app:srcCompat="@drawable/cp_lines" />
+
+</android.support.constraint.ConstraintLayout>

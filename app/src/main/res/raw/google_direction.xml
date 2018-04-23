@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DirectionsResponse>
+ <status>OK</status>
+ <route>
+  <summary>台12線</summary>
+  <leg>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>24.1702026</lat>
+     <lng>120.6397367</lng>
+    </start_location>
+    <end_location>
+     <lat>24.1705539</lat>
+     <lng>120.6388470</lng>
+    </end_location>
+    <polyline>
+     <points>wvorCkmi_VAZCXCJIPW^KTCDI`@</points>
+    </polyline>
+    <duration>
+     <value>21</value>
+     <text>1 分</text>
+    </duration>
+    <html_instructions>往&lt;b&gt;西&lt;/b&gt;走&lt;b&gt;至善路18巷&lt;/b&gt;朝&lt;b&gt;至善路&lt;/b&gt;前進&lt;div style=&quot;font-size:0.9em&quot;&gt;部分路段限制通行的道路&lt;/div&gt;</html_instructions>
+    <distance>
+     <value>101</value>
+     <text>0.1 公里</text>
+    </distance>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>24.1705539</lat>
+     <lng>120.6388470</lng>
+    </start_location>
+    <end_location>
+     <lat>24.1715858</lat>
+     <lng>120.6393458</lng>
+    </end_location>
+    <polyline>
+     <points>}xorCygi_V_@Is@Q[KKCICEAECQMYQQM</points>
+    </polyline>
+    <duration>
+     <value>42</value>
+     <text>1 分</text>
+    </duration>
+    <html_instructions>於&lt;b&gt;至善路&lt;/b&gt;向&lt;b&gt;右&lt;/b&gt;轉</html_instructions>
+    <distance>
+     <value>127</value>
+     <text>0.1 公里</text>
+    </distance>
+    <maneuver>turn-right</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>24.1715858</lat>
+     <lng>120.6393458</lng>
+    </start_location>
+    <end_location>
+     <lat>24.1694106</lat>
+     <lng>120.6424140</lng>
+    </end_location>
+    <polyline>
+     <points>m_prC}ji_V?Y?EAAr@aAv@iAjBoCjAcB~@wAr@aA\g@</points>
+    </polyline>
+    <duration>
+     <value>117</value>
+     <text>2 分</text>
+    </duration>
+    <html_instructions>於&lt;b&gt;上安路&lt;/b&gt;向&lt;b&gt;右&lt;/b&gt;轉</html_instructions>
+    <distance>
+     <value>399</value>
+     <text>0.4 公里</text>
+    </distance>
+    <maneuver>turn-right</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>24.1694106</lat>
+     <lng>120.6424140</lng>
+    </start_location>
+    <end_location>
+     <lat>24.1679728</lat>
+     <lng>120.6411284</lng>
+    </end_location>
+    <polyline>
+     <points>yqorCa~i_V^ZzBlBVRl@h@r@n@HF</points>
+    </polyline>
+    <duration>
+     <value>62</value>
+     <text>1 分</text>
+    </duration>
+    <html_instructions>於&lt;b&gt;河南路二段&lt;/b&gt;向&lt;b&gt;右&lt;/b&gt;轉</html_instructions>
+    <distance>
+     <value>206</value>
+     <text>0.2 公里</text>
+    </distance>
+    <maneuver>turn-right</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>24.1679728</lat>
+     <lng>120.6411284</lng>
+    </start_location>
+    <end_location>
+     <lat>24.1476638</lat>
+     <lng>120.6734147</lng>
+    </end_location>
+    <polyline>
+     <points>yhorCavi_V?FBHNNZNHQtFmIl@aAp@uATa@FMJUv@gBhBcEz@qBl@iADKLYlGcOLWJW`@_AN]LYrEwJjBsDb@_APc@lGcNb@cALWtCuGn@sAxC{Gb@kANYxAaD`@}@fCwFn@sAfCyFLUj@uAbCmFJQ`AqBFSLWp@qABGxBaE|AeC^g@`@i@lAuAfAsAT]r@u@tCmDf@i@\]pA_BLObC{CnAyAr@w@</points>
+    </polyline>
+    <duration>
+     <value>677</value>
+     <text>11 分</text>
+    </duration>
+    <html_instructions>於&lt;b&gt;台灣大道三段&lt;/b&gt;/&lt;b&gt;台12線&lt;/b&gt;向&lt;b&gt;左&lt;/b&gt;轉&lt;div style=&quot;font-size:0.9em&quot;&gt;繼續開在台12線上&lt;/div&gt;</html_instructions>
+    <distance>
+     <value>4038</value>
+     <text>4.0 公里</text>
+    </distance>
+    <maneuver>turn-left</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>24.1476638</lat>
+     <lng>120.6734147</lng>
+    </start_location>
+    <end_location>
+     <lat>24.1454937</lat>
+     <lng>120.6712368</lng>
+    </end_location>
+    <polyline>
+     <points>{ikrCy_p_Vp@r@l@h@h@h@zAxAv@z@jAlAfAdA</points>
+    </polyline>
+    <duration>
+     <value>69</value>
+     <text>1 分</text>
+    </duration>
+    <html_instructions>於&lt;b&gt;五權路&lt;/b&gt;/&lt;b&gt;台1乙線&lt;/b&gt;向&lt;b&gt;右&lt;/b&gt;轉</html_instructions>
+    <distance>
+     <value>327</value>
+     <text>0.3 公里</text>
+    </distance>
+    <maneuver>turn-right</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>24.1454937</lat>
+     <lng>120.6712368</lng>
+    </start_location>
+    <end_location>
+     <lat>24.1358945</lat>
+     <lng>120.6822196</lng>
+    </end_location>
+    <polyline>
+     <points>i|jrCgro_VHMv@aA^a@|AgBp@y@hDcE@AHILO\a@fAoAj@q@VY~@iAxAcBdAsAf@g@RUhAwANQPSX_@\c@b@i@JMJKb@k@j@s@j@s@fCaDl@s@f@m@n@u@JMf@k@\e@`AkAdAkAVYl@u@d@i@v@cAZW</points>
+    </polyline>
+    <duration>
+     <value>309</value>
+     <text>5 分</text>
+    </duration>
+    <html_instructions>於&lt;b&gt;民權路&lt;/b&gt;向&lt;b&gt;左&lt;/b&gt;轉</html_instructions>
+    <distance>
+     <value>1543</value>
+     <text>1.5 公里</text>
+    </distance>
+    <maneuver>turn-left</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>24.1358945</lat>
+     <lng>120.6822196</lng>
+    </start_location>
+    <end_location>
+     <lat>24.1344445</lat>
+     <lng>120.6829327</lng>
+    </end_location>
+    <polyline>
+     <points>i`irC{vq_VNMvAg@VKbAa@JGPG~@Y</points>
+    </polyline>
+    <duration>
+     <value>48</value>
+     <text>1 分</text>
+    </duration>
+    <html_instructions>接著走&lt;b&gt;台中路&lt;/b&gt;</html_instructions>
+    <distance>
+     <value>177</value>
+     <text>0.2 公里</text>
+    </distance>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>24.1344445</lat>
+     <lng>120.6829327</lng>
+    </start_location>
+    <end_location>
+     <lat>24.1370061</lat>
+     <lng>120.6891350</lng>
+    </end_location>
+    <polyline>
+     <points>gwhrCi{q_VCGg@}A]kAAYi@aBAG[y@I]y@eCYcAYy@Mc@k@eBUo@IWQg@a@sAEQIYc@{A_@iASg@</points>
+    </polyline>
+    <duration>
+     <value>158</value>
+     <text>3 分</text>
+    </duration>
+    <html_instructions>於&lt;b&gt;復興路四段&lt;/b&gt;/&lt;b&gt;136縣道&lt;/b&gt;向&lt;b&gt;左&lt;/b&gt;轉</html_instructions>
+    <distance>
+     <value>692</value>
+     <text>0.7 公里</text>
+    </distance>
+    <maneuver>turn-left</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>24.1370061</lat>
+     <lng>120.6891350</lng>
+    </start_location>
+    <end_location>
+     <lat>24.1371671</lat>
+     <lng>120.6892904</lng>
+    </end_location>
+    <polyline>
+     <points>igirCcbs_V_@]</points>
+    </polyline>
+    <duration>
+     <value>4</value>
+     <text>1 分</text>
+    </duration>
+    <html_instructions>繼續直行走&lt;b&gt;復興路四段&lt;/b&gt;</html_instructions>
+    <distance>
+     <value>24</value>
+     <text>24 公尺</text>
+    </distance>
+    <maneuver>straight</maneuver>
+   </step>
+   <step>
+    <travel_mode>DRIVING</travel_mode>
+    <start_location>
+     <lat>24.1371671</lat>
+     <lng>120.6892904</lng>
+    </start_location>
+    <end_location>
+     <lat>24.1368527</lat>
+     <lng>120.6869482</lng>
+    </end_location>
+    <polyline>
+     <points>ihirCacs_VERADAFAJARGr@Ab@@b@?VBXHr@H\Rn@Nj@Xt@</points>
+    </polyline>
+    <duration>
+     <value>90</value>
+     <text>2 分</text>
+    </duration>
+    <html_instructions>於&lt;b&gt;復興路四段250巷&lt;/b&gt;向&lt;b&gt;左&lt;/b&gt;轉&lt;div style=&quot;font-size:0.9em&quot;&gt;目的地在右邊&lt;/div&gt;</html_instructions>
+    <distance>
+     <value>248</value>
+     <text>0.2 公里</text>
+    </distance>
+    <maneuver>turn-left</maneuver>
+   </step>
+   <duration>
+    <value>1597</value>
+    <text>27 分</text>
+   </duration>
+   <distance>
+    <value>7882</value>
+    <text>7.9 公里</text>
+   </distance>
+   <start_location>
+    <lat>24.1702026</lat>
+    <lng>120.6397367</lng>
+   </start_location>
+   <end_location>
+    <lat>24.1368527</lat>
+    <lng>120.6869482</lng>
+   </end_location>
+   <start_address>407台灣台中市西屯區至善路18巷5號</start_address>
+   <end_address>401台灣台中市東區復興路四段250巷</end_address>
+  </leg>
+  <copyrights>地圖資料©2018 Google</copyrights>
+  <overview_polyline>
+   <points>wvorCkmi_VEt@M\c@t@Mf@{Bk@OEWQk@_@?_@hBmCjHmK\g@^ZrC`C`BxAHF?FBHNNZNHQbHoKfAwBtDoIz@qBl@iARe@hIsR\w@~HkPfJkSlJ}Sr@eBzB_FlI{QnDcIlAcCjAeCxBaE|AeC`AqA~E}FtCmDf@i@nB}BtG}HdF`FbChCfAdAHMvAcBnCaDbE_FhD}DfGiH~BsCnF{G`LeNpDeEv@cAZWNMvAg@zAm@\O~@YCGeAiDAYi@aB]aAwBaHyAqEs@{BOk@cAeDSg@_@]GXCRIfA?fABp@RpAb@zAXt@</points>
+  </overview_polyline>
+  <bounds>
+   <southwest>
+    <lat>24.1344445</lat>
+    <lng>120.6388470</lng>
+   </southwest>
+   <northeast>
+    <lat>24.1715939</lat>
+    <lng>120.6892904</lng>
+   </northeast>
+  </bounds>
+ </route>
+ <geocoded_waypoint>
+  <geocoder_status>OK</geocoder_status>
+  <type>street_address</type>
+  <place_id>ChIJlxaJuvU9aTQRwlQ7XMpXGUo</place_id>
+ </geocoded_waypoint>
+ <geocoded_waypoint>
+  <geocoder_status>OK</geocoder_status>
+  <type>route</type>
+  <place_id>ChIJs0WFvRU9aTQRRHlGy-06LG4</place_id>
+ </geocoded_waypoint>
+</DirectionsResponse>

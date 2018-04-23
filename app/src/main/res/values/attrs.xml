@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MySpeedView">
+        <attr name="needle_image" format="reference" />
+        <attr name="srcCompat"></attr>
+    </declare-styleable>
+</resources>
